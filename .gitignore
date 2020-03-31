@@ -83,3 +83,5 @@ typings/
 
 # Build folder
 build
+
+.history
