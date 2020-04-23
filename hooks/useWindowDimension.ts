@@ -1,26 +1,29 @@
 import { useState, useEffect } from "react";
-import { throttle } from "../../public/js/util";
+import { throttle } from "util/util";
 
-export default function useWindowSize() {
+interface IDimension {
+  width: number
+  height: number
+}
+
+export default function useWindowSize(interval = 500) {
   const isClient = typeof window === "object";
 
-  function getSize() {
+  function getSize(): IDimension {
     return {
       width: isClient ? window.innerWidth : undefined,
       height: isClient ? window.innerHeight : undefined
     };
   }
 
-  const [windowSize, setWindowSize] = useState(getSize);
+  const [windowSize, setWindowSize] = useState(getSize());
 
   useEffect(() => {
-    if (!isClient) {
-      return false;
-    }
+    if (!isClient) return;
 
     const handleResize = throttle(() => {
       setWindowSize(getSize());
-    }, 500);
+    }, interval);
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);

@@ -1,4 +1,5 @@
-function formatDate(date) {
+
+export const formatDate = (date: string) => {
   return date
     .slice(0, 10)
     .split("-")
@@ -6,7 +7,7 @@ function formatDate(date) {
     .join("/");
 }
 
-function getIntFromDate(date) {
+export const getIntFromDate = (date: string) => {
   date = date.replace("T", "");
   date = date.replace("Z", "");
   date = date.replace(".", "");
@@ -15,10 +16,11 @@ function getIntFromDate(date) {
   return parseInt(date);
 }
 
-function throttle(func, delay) {
+export const throttle = (func: (...args) => any, delay: number) => {
   let inProgress = false;
   return (...args) => {
-    if (inProgress) {
+    if (inProgress)
+    {
       return;
     }
     inProgress = true;
@@ -28,7 +30,3 @@ function throttle(func, delay) {
     }, delay);
   };
 }
-
-module.exports.formatDate = formatDate;
-module.exports.getIntFromDate = getIntFromDate;
-module.exports.throttle = throttle;
