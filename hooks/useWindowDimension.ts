@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { throttle } from "util/util";
+import { throttle } from "../util/util";
 
 interface IDimension {
-  width: number
-  height: number
+  width: number | undefined
+  height: number | undefined
 }
 
 export default function useWindowSize(interval = 500) {

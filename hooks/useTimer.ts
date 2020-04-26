@@ -14,7 +14,7 @@ export default function useTimer() {
   }
 
   useEffect(() => {
-    let interval = null;
+    let interval: any = null;
     if (isActive)
     {
       interval = setInterval(() => {

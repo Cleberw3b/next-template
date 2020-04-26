@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { throttle } from "util/util";
+import { throttle } from "../util/util";
 
 export default function useHeightToTop(updateInterval = 200) {
 

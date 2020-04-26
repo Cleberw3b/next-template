@@ -1,6 +1,12 @@
 import "./facebook-icon.scss";
 
-const FacebookIcon = ({ color, height, width }) => (
+interface IProps {
+  color: string
+  height: number
+  width: number
+}
+
+const FacebookIcon = ({ color, height, width }: IProps) => (
   <svg
     height={height ? `${height}px` : "24px"}
     width={width ? `${width}px` : "24px"}
@@ -11,7 +17,7 @@ const FacebookIcon = ({ color, height, width }) => (
   </svg>
 );
 
-function setColor(color) {
+function setColor(color: string) {
   if (color === "white") return "facebook-icon-white";
   return "facebook-icon-black";
 }
