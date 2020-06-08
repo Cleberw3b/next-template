@@ -17,23 +17,17 @@
         "no-bitwise": true,
         "no-conditional-assignment": true,
         "no-consecutive-blank-lines": false,
-        "no-console": {
-            "severity": "warning",
-            "options": [
-                "debug",
-                "info",
-                "log",
-                "time",
-                "timeEnd",
-                "trace"
-            ]
-        }
-    },
-    "jsRules": {
-        "max-line-length": {
-            "options": [
-                120
-            ]
-        }
+        "no-console": false
+        // "no-console": {
+        //     "severity": "warning",
+        //     "options": [
+        //         "debug",
+        //         "info",
+        //         "log",
+        //         "time",
+        //         "timeEnd",
+        //         "trace"
+        //     ]
+        // }
     }
 }

@@ -6,7 +6,6 @@ import "public/styles/theme.scss"
 // Will be called once for every metric that has to be reported.
 // These metrics can be sent to any analytics service
 export function reportWebVitals(metric: any) {
-  // tslint:disable-next-line:no-console
   console.log(metric)
 }
 
