@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production next start"
+    "start": "NODE_ENV=production next start",
+    "analize": "ANALYZE=true next build"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^9.4.4",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
