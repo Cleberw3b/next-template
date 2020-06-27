@@ -1,17 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2019",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "baseUrl": ".",
+    "types": [
+      "jest"
+    ],
+    "baseUrl": "src",
     "allowJs": true,
-    "skipLibCheck": true,
     "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -25,6 +30,6 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
+    "**/*.tsx"
   ]
 }

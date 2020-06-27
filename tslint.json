@@ -1,16 +1,22 @@
 {
     "extends": "tslint:recommended",
+    "defaultSeverity": "error",
     "rulesDirectory": [],
     "rules": {
         "max-line-length": {
             "options": [
-                120
+                140
             ]
         },
         "semicolon": [
             false,
             "always",
             "ignore-interfaces"
+        ],
+        "quotemark": [
+            true,
+            "single",
+            "avoid-escape"
         ],
         "new-parens": true,
         "no-arg": true,
