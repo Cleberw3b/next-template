@@ -1,7 +1,7 @@
 import { NextPageContext } from 'next'
 import { AppProps, AppContext } from 'next/app'
 import Layout from "components/layout/layout"
-import "public/styles/theme.scss"
+import "../../public/styles/theme.scss"
 
 // Will be called once for every metric that has to be reported.
 // These metrics can be sent to any analytics service

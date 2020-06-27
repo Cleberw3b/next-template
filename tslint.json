@@ -4,13 +4,12 @@
     "rules": {
         "max-line-length": {
             "options": [
-                120
+                140
             ]
         },
         "semicolon": [
-            false,
-            "always",
-            "ignore-interfaces"
+            true,
+            "never"
         ],
         "new-parens": true,
         "no-arg": true,

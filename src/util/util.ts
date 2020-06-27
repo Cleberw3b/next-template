@@ -13,7 +13,7 @@ export const getIntFromDate = (date: string) => {
   date = date.replace(".", "")
   date = date.replace(/:/g, "")
   date = date.replace(/-/g, "")
-  return parseInt(date)
+  return parseInt(date, 10)
 }
 
 export const throttle = (func: (...args: any) => any, delay: number) => {
