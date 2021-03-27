@@ -80,8 +80,7 @@ typings/
 
 # VS Code
 .vscode
+.history
 
 # Build folder
 build
-
-.history
